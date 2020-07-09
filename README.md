@@ -6,7 +6,8 @@ Today we will be writting codes for static  Invisibility Cloak .
 Follow the clock_invisivble.py for the code
 
 Some of the QNA 's 
-why do we convert BGR colour code to HSV colour code
+
+why do we convert BGR colour code to HSV colour code?
 ans- R, G, B in RGB are all co-related to the color luminance( what we loosely call intensity),i.e., We cannot separate color information from luminance. HSV or Hue Saturation Value is used to separate image luminance from color information. This makes it easier when we are working on or need luminance of the image/frame. 
 For more refrence https://stackoverflow.com/questions/17063042/why-do-we-convert-from-rgb-to-hsv/17063317#:~:text=R%2C%20G%2C%20B%20in%20RGB,luminance%20of%20the%20image%2Fframe.
 
@@ -24,5 +25,9 @@ Some of the HSV color codes are
 IF you have diffrent color cloth you can track your own colour using the tracker and change the values of Lower red and Upper red from here
  lower_red = np.array([0, 120, 50])
  upper_red = np.array([10, 255,255])
+For more details refer tracking_color.py 
+
+You can also refer youtube for more elobaration and understanding 
+https://www.youtube.com/watch?v=AkY2TpvDGUo&list=LL6u4PdXLXZkfLz6Q0Yp68Yw&index=4&t=2416s
 
  
