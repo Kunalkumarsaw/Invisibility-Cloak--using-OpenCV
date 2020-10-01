@@ -7,7 +7,7 @@ import numpy as np
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
 out = cv2.VideoWriter('clock_invisibility_output.avi', fourcc, 20.0, (640, 480))
 
-##reading from the webcam
+##Read from the webcam
 cap = cv2.VideoCapture(0)
 
 ## Allow the system to sleep for 3 seconds before the webcam starts
@@ -30,7 +30,7 @@ while (cap.isOpened()):
     ## Convert the color space from BGR to HSV
     hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 
-    ## Generat masks to detect red color
+    ## Generate masks to detect red color
     
     ##YOU CAN CHANGE THE COLOR VALUE BELOW ACCORDING TO YOUR CLOTH COLOR
     lower_red = np.array([0, 120, 50])
